@@ -29,5 +29,16 @@ class TestNumberPrettifier(unittest.TestCase):
     number_prettified = prettifier(number)
     self.assertEqual("2.5M", number_prettified)
 
+  def test_billion_number(self):
+    number = 1000000000
+    number_prettified = prettifier(number)
+    self.assertEqual("1B", number_prettified)
+
+  def test_decimal_billion_number(self):
+    number = 1123456789
+    number_prettified = prettifier(number)
+    self.assertEqual("1.1B", number_prettified)
+
+
 if __name__ == '__main__':
     unittest.main()
