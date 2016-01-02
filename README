@@ -8,12 +8,24 @@ Any assumptions made and missing requirements that are not covered in the specif
 
 Any issues faced and any constructive feedback you may wish to give about improving the assignment
 
+
+
+
 ======= USAGE =======
-import the library into your project
+1- Use on terminal:
+	$ python run_prettify.py <number>
+	ex: python run_prettify.py 1234343
+	output: 1.2M
 
-from prettifier.number_prettifier import prettifier
+2- Use in your project
+	import the library into your project
 
-prettifier(number)
+	Includes the import on file:
+	"from prettifier.number_prettifier import prettifier"
+
+	Execute the method prettifier:
+
+	number_prettified = prettifier(number)
 
 
 

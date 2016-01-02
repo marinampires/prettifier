@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import unittest
 from tests.prettifier_test import TestPrettify
 

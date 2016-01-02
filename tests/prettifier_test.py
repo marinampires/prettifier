@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import unittest
 
 from prettifier.prettifier import prettify
