@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 import unittest
-from tests.number_prettifier_test import TestNumberPrettifier
+from tests.prettifier_test import TestPrettify
 
 testLoad = unittest.TestLoader()
-testSuite = testLoad.loadTestsFromTestCase(TestNumberPrettifier)
+testSuite = testLoad.loadTestsFromTestCase(TestPrettify)
 newSuite = unittest.TestSuite(testSuite)
 
 if __name__ == '__main__':

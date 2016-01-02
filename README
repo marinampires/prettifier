@@ -7,3 +7,17 @@ Instructions to configure and prepare the source code to build and run properly
 Any assumptions made and missing requirements that are not covered in the specifications
 
 Any issues faced and any constructive feedback you may wish to give about improving the assignment
+
+======= USAGE =======
+import the library into your project
+
+from prettifier.number_prettifier import prettifier
+
+prettifier(number)
+
+
+
+======= TESTS =======
+- Run tests:
+	put on console => python suite_tests.py
+
