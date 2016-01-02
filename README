@@ -1,3 +1,40 @@
+# Prettifier
+
+Library to prettifier big number as millions, billions and trillions
+
+## Instal
+
+```
+$ npm install --save publicidade
+```
+
+
+```
+
+## Usage
+
+Para registrar um slot é preciso passar o ID do elemento ou a instância do
+elemento na DOM. Caso seja passado um elemento que não possua um ID próprio,
+será gerado um ID randômico e atribuido para o mesmo.
+
+**Caso seja utilizado um ID de um elemento inexistente na DOM, o registro
+será ignorado.**
+
+```javascript
+publicidade.slots.register("element-id", options);
+```
+
+Com instância da DOM:
+
+```javascript
+var elem = document.getElementById("element-id");
+publicidade.slots.register(elem, options);
+```
+
+
+
+
+
 Create a txt file with the following information
 
 Instructions to install and configure any pre-requisites and dependencies to prepare the development environment

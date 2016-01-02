@@ -40,3 +40,15 @@ class TestPrettify(unittest.TestCase):
   def test_decimal_trillion_number(self):
     number = 2501123456789
     self.assertEqual("2.5T", prettify(number))
+
+  def test_million_number_neg(self):
+    number = -1000000
+    self.assertEqual("-1M", prettify(number))
+
+  def test_thousand_number_neg(self):
+    number = -1000
+    self.assertEqual(number, prettify(number))
+
+  def test_number_bigger_than_1_trillion(self):
+    number = 1234201123456789
+    self.assertEqual("1234.2T", prettify(number))
