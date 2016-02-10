@@ -10,7 +10,7 @@ Have python 2.7 or higher installed
 ## Build 
 Go to directory prettifier
 Run command to generate the distribution
-```
+```bash
 	$ cd prettifier
 	$ python setup.py sdist
 ```
@@ -23,7 +23,7 @@ Copy the file Prettifier-0.1.tar.gz to an directory and unzip it.
 Go to directory Prettifier-0.1
 
 Run command to install it
-```
+```bash
 	$ tar -zxvf Prettifier-0.1.tar.gz 
 	$ cd Prettifier-0.1
 	$ python setup.py install
@@ -32,7 +32,7 @@ Run command to install it
 ## Usage
 ### Command Line Interface
 
-```
+```bash
     $ python -m prettifier.tool 12345
     12345
 
@@ -44,7 +44,7 @@ Run command to install it
 ```
 ### Python Library
 
-```
+```python
 	>>> from prettifier.number_prettifier import prettify
 	>>> number = 123456789
 	>>> number_prettified = prettify(number)
@@ -54,7 +54,7 @@ Run command to install it
 
 ## TESTS
 ### Run tests
-```
+```bash
 	$ python -m unittest -v tests.prettifier_test
 ```
 
