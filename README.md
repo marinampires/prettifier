@@ -48,3 +48,5 @@ Run command to install it
 ```Run tests
 	$ python -m unittest -v tests.prettifier_test
 ```
+
+https://api.travis-ci.org/marinampires/prettifier.svg?branch=master)](https://travis-ci.org/marinampires/prettifier
