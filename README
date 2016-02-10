@@ -1,72 +1,50 @@
 # Prettifier
-
 Library to prettifier big number as millions, billions and trillions
 
-## Instal
+## Requirements
+Have python 2.7 or higher installed
 
+## Build 
+Go to directory prettifier
+Run command to generate the distribution
 ```
-$ npm install --save publicidade
+	$ cd prettifier
+	$ python setup.py sdist
 ```
+*** the distribution file (Prettifier-0.1.tar.gz) is alredy built in dist directory ***
 
 
+## Install in your python enviroment
+Copy the file Prettifier-0.1.tar.gz to an directory and unzip it.
+Go to directory Prettifier-0.1
+Run command to install it
+```
+	$ tar -zxvf Prettifier-0.1.tar.gz 
+	$ cd Prettifier-0.1
+	$ python setup.py install
 ```
 
 ## Usage
+```Command Line Interface
+    $ python -m prettifier.tool 12345
+    12345
 
-Para registrar um slot é preciso passar o ID do elemento ou a instância do
-elemento na DOM. Caso seja passado um elemento que não possua um ID próprio,
-será gerado um ID randômico e atribuido para o mesmo.
+    $ python -m prettifier.tool 1234567899
+    1.2B
 
-**Caso seja utilizado um ID de um elemento inexistente na DOM, o registro
-será ignorado.**
-
-```javascript
-publicidade.slots.register("element-id", options);
+    $ python -m prettifier.tool number
+    The type is not a numeric value
 ```
 
-Com instância da DOM:
-
-```javascript
-var elem = document.getElementById("element-id");
-publicidade.slots.register(elem, options);
+```Python Library
+	>>> from prettifier.number_prettifier import prettify
+	>>> number = 123456789
+	>>> number_prettified = prettify(number)
+	>>> print number_prettified
+	123.4M
 ```
 
-
-
-
-
-Create a txt file with the following information
-
-Instructions to install and configure any pre-requisites and dependencies to prepare the development environment
-
-Instructions to configure and prepare the source code to build and run properly
-
-Any assumptions made and missing requirements that are not covered in the specifications
-
-Any issues faced and any constructive feedback you may wish to give about improving the assignment
-
-
-
-
-======= USAGE =======
-1- Use on terminal:
-	$ python run_prettify.py <number>
-	ex: python run_prettify.py 1234343
-	output: 1.2M
-
-2- Use in your project
-	import the library into your project
-
-	Includes the import on file:
-	"from prettifier.number_prettifier import prettifier"
-
-	Execute the method prettifier:
-
-	number_prettified = prettifier(number)
-
-
-
-======= TESTS =======
-- Run tests:
-	put on console => python suite_tests.py
-
+## TESTS
+```Run tests
+	$ python -m unittest -v tests.prettifier_test
+```

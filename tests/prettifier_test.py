@@ -1,6 +1,6 @@
 import unittest
 
-from prettifier.prettifier import prettify
+from prettifier.number_prettifier import prettify
 
 class TestPrettify(unittest.TestCase):
 
@@ -11,11 +11,11 @@ class TestPrettify(unittest.TestCase):
 
   def test_number_with_3_digits(self):
     number = 532
-    self.assertEqual(number, prettify(number))
+    self.assertEqual(str(number), prettify(number))
 
   def test_number_with_6_digits(self):
     number = 149532
-    self.assertEqual(number, prettify(number))
+    self.assertEqual(str(number), prettify(number))
   
   def test_million_number(self):
     number = 1000000
@@ -47,8 +47,12 @@ class TestPrettify(unittest.TestCase):
 
   def test_thousand_number_neg(self):
     number = -1000
-    self.assertEqual(number, prettify(number))
+    self.assertEqual(str(number), prettify(number))
 
   def test_number_bigger_than_1_trillion(self):
     number = 1234201123456789
     self.assertEqual("1234.2T", prettify(number))
+
+
+if __name__ == '__main__':
+    unittest.main()    

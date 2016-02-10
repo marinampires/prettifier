@@ -13,7 +13,7 @@ Usage::
 
 """
 
-from prettifier import prettify
+from number_prettifier import prettify
 
 def main():
     import sys
