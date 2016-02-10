@@ -7,7 +7,7 @@ def prettify(number):
     return _prettify(number, _MILLION, 1)
 
 def _prettify(number, scale, scale_key):
-    if isinstance(number, (int, long, float)):
+    if isinstance(number, (int, float)):
         if not(_is_number_prettifiable(number)):
             return str(number)
 
