@@ -1,4 +1,7 @@
 # Prettifier
+
+[![Build Status](https://travis-ci.org/marinampires/prettifier.svg?branch=master)](https://travis-ci.org/marinampires/prettifier)
+
 Library to prettifier big number as millions, billions and trillions
 
 ## Requirements
@@ -16,7 +19,9 @@ Run command to generate the distribution
 
 ## Install in your python enviroment
 Copy the file Prettifier-0.1.tar.gz to an directory and unzip it.
+
 Go to directory Prettifier-0.1
+
 Run command to install it
 ```
 	$ tar -zxvf Prettifier-0.1.tar.gz 
@@ -25,7 +30,9 @@ Run command to install it
 ```
 
 ## Usage
-```Command Line Interface
+### Command Line Interface
+
+```
     $ python -m prettifier.tool 12345
     12345
 
@@ -35,8 +42,9 @@ Run command to install it
     $ python -m prettifier.tool number
     The type is not a numeric value
 ```
+### Python Library
 
-```Python Library
+```
 	>>> from prettifier.number_prettifier import prettify
 	>>> number = 123456789
 	>>> number_prettified = prettify(number)
@@ -45,8 +53,8 @@ Run command to install it
 ```
 
 ## TESTS
-```Run tests
+### Run tests
+```
 	$ python -m unittest -v tests.prettifier_test
 ```
 
-https://api.travis-ci.org/marinampires/prettifier.svg?branch=master)](https://travis-ci.org/marinampires/prettifier
