@@ -33,7 +33,7 @@ def _is_number_prettifiable(number):
 def _should_get_next_short_scale(quotient, scale_key):
     #if the quotient is bigger than 0 and bigger than short scale, it will try the next scale and go on 
     #until reach the trillion scale
-    return quotient > 0 and quotient >= _SHORT_SCALE and scale_key < _SCALE_LABELS.keys()[-1]
+    return quotient > 0 and quotient >= _SHORT_SCALE and (scale_key + 1) in _SCALE_LABELS.keys()
 
 def _has_number_decimal_part(remainder):
     return remainder != 0
